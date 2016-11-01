@@ -2,6 +2,12 @@ header {
 	text-align: center;
 	margin: 0 auto;
 	width: 50%;
+	border: 1px solid black;
+}
+
+main {
+	border: 1px solid red;
+	display: none;
 }
 
 .css-typing {
