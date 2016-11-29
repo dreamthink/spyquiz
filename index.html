@@ -11,15 +11,51 @@
 <body>
 
 	<header class="intro">
-			<p class="css-typing">DO YOU HAVE WHAT IT TAKES TO BE A SPY?<span>|</span></p>
+		<p class="css-typing">DO YOU HAVE WHAT IT TAKES TO BE A SPY?<span class="cursor">|</span></p>
 		<img src="images/spy.jpeg" class="spyimage">
-		<button class="btn btn-start">TAKE THE SPY QUIZ</button>
-		</header>
+		<div class="btn-start"><button class="btn">TAKE THE SPY QUIZ</button></div>
+	</header>
 
-	<main>
-		<h5 class="questionCounter">Question counter goes here</h5>
-		<h1 class="questionText">Questions go here</h1>
-		<h2 class="possibleAnswers">Possible answers go here</h2>
+	<main class="main-quiz-holder">
+
+		<div class="questionAndAnswerContainer">
+			<div class="questionNumberDisplay">
+				Question Number
+			</div>
+			<h2 id="prompt" class="questionText">
+			</h2>
+
+			<div id="choices">
+				<input class="option" type="radio" value="0" name="option">
+				<br>
+				<input class="option" type="radio" value="0" name="option">
+				<br>
+				<input class="option" type="radio" value="0" name="option">
+				<br>
+				<input class="option" type="radio" value="0" name="option">
+			</div>
+
+		</div>
+<!-- 
+		<div class="btnContainer">
+			<div class="next">
+				<button class="btnNext btn">Next</button>
+			</div>
+			<div class="clear">
+			</div>
+		</div> -->
+		
+		<section class="results">
+			<h2>Final Score: <span id="result">5/5</span></h2>
+			<h3>Correct Answers:</h3>
+			<div id="result-msg"></div>
+			<h4>Would you like to play again? Click the button below.</h4>
+
+			<div class="wrapper">
+				<button id="againButton" class="btn">Try again</button>
+			</div>
+		</section>
+
 	</main>
 
 </body>

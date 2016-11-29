@@ -5,9 +5,10 @@ header {
 	border: 1px solid black;
 }
 
-main {
+.main-quiz-holder {
 	border: 1px solid red;
 	display: none;
+	text-align: center;
 }
 
 .css-typing {
@@ -17,11 +18,12 @@ main {
 	white-space:nowrap;
 	overflow: hidden;
 	width: 21em;
-  	-webkit-animation: type 5s steps(50, end);
-    animation: type 3s steps(50, end);
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 3s steps(50, end);
+	display: none;
 }
 
-span {
+.cursor {
   animation: blink 1s infinite;
 } 
 
@@ -44,4 +46,5 @@ span {
 .btn-start {
 	display: none;
 	margin-top: 3em;
+	text-align: center;
 }
