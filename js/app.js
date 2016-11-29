@@ -54,13 +54,15 @@ $(document).ready(function() {
 	$(".css-typing").show();
 	$("html").on("click", function() {
 			$(".spyimage").fadeIn(3000);
-			$(".btn-start").fadeIn(5000);
+			$(".btn-start").fadeIn(3000);
 		});
-	$(".btn-start").on("click", function() {
-		$(".intro").hide();
-		$("main").show();
-		$(".results").hide();
-		questionDisplay();
+	$(".startButton").click(function() {
+		$(".startButton").toggle("bounce", { times: 3}, "slow", function() {
+			$(".intro").hide();
+			$("main").show();
+			$(".results").hide();
+			questionDisplay();
+		});
 	});
 
 	$(".questionAndAnswerContainer").on("click", ".option", function() {

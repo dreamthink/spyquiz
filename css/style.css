@@ -1,6 +1,6 @@
 header {
 	text-align: center;
-	margin: 0 auto;
+	margin: 3em auto;
 	width: 50%;
 	/*border: 1px solid black;*/
 }
@@ -45,6 +45,21 @@ header {
 
 .btn-start {
 	display: none;
-	margin-top: 3em;
+	margin-top: 1em;
 	text-align: center;
+	/*border: 1px solid green;*/
+}
+
+.startButton {
+	background-color: black;
+	font-family: "Share Tech Mono";
+	font-size: 1.5em;
+	color: white;
+}
+
+.startButton:hover {
+	background-color: white;
+	font-family: "Share Tech Mono";
+	color: black;
+	border: 3px solid black;
 }
