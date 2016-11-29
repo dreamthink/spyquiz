@@ -5,17 +5,11 @@ header {
 	/*border: 1px solid black;*/
 }
 
-.main-quiz-holder {
-	/*border: 1px solid red;*/
-	display: none;
-	text-align: center;
-}
-
 .css-typing {
 	font-family: "Share Tech Mono";
 	font-size: 2em;
 	margin: 1em;
-	white-space:nowrap;
+	white-space: nowrap;
 	overflow: hidden;
 	width: 21em;
   -webkit-animation: type 5s steps(50, end);
@@ -57,9 +51,56 @@ header {
 	color: white;
 }
 
+.startButton:focus {
+	outline: 0 !important;
+}
+
 .startButton:hover {
 	background-color: white;
 	font-family: "Share Tech Mono";
 	color: black;
 	border: 3px solid black;
 }
+
+.main-quiz-holder {
+	/*border: 1px solid red;*/
+	margin-top: 3em;
+	display: none;
+	text-align: center;
+}
+
+#prompt {
+	/*border: 1px solid green;*/
+	/*font-family: "Share Tech Mono";*/
+}
+
+.questionNumberDisplay {
+	font-size: 1.5em;
+	/*font-family: "Share Tech Mono";*/
+}
+
+label {
+	display: block;
+}
+
+input[type="radio"] {
+	opacity: 0;
+}
+
+.choice-wrapper {
+	text-align: center;
+	/*border: 1px solid green;*/
+}
+
+.choice {
+	border: 1px solid black;
+	padding: 1em;
+	margin: 0 auto;
+	border-radius: 5px;
+	width: 30%;
+}
+
+.choice:hover {
+	border: 1px solid red;
+}
+

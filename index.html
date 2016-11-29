@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Spy Quiz</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="favicon.ico">
 </head>
 <body>
 
@@ -20,21 +21,21 @@
 
 		<div class="questionAndAnswerContainer">
 			<div class="questionNumberDisplay">
-				Question Number
 			</div>
 			<h2 id="prompt" class="questionText">
 			</h2>
 
-			<div id="choices">
-				<input class="option" type="radio" value="0" name="option">
-				<br>
-				<input class="option" type="radio" value="0" name="option">
-				<br>
-				<input class="option" type="radio" value="0" name="option">
-				<br>
-				<input class="option" type="radio" value="0" name="option">
+			<div class="choice-wrapper">
+				<div id="choices">
+					<!-- <input class="option" type="radio" value="0" name="option">
+					<br>
+					<input class="option" type="radio" value="0" name="option">
+					<br>
+					<input class="option" type="radio" value="0" name="option">
+					<br>
+					<input class="option" type="radio" value="0" name="option"> -->
+				</div>
 			</div>
-
 		</div>
 <!-- 
 		<div class="btnContainer">
@@ -47,6 +48,7 @@
 		
 		<section class="results">
 			<h2>Final Score: <span id="result">5/5</span></h2>
+			<h2 class="result-detail-msg"></h2>
 			<h3>Correct Answers:</h3>
 			<div id="result-msg"></div>
 			<h4>Would you like to play again? Click the button below.</h4>
