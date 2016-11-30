@@ -87,9 +87,9 @@ $(document).ready(function() {
 			}
 
 			// build result slider
-			$("#result-msg").append("<h3>Question " + (currentQuestionNumber + 1) + ": " + questionsArray[currentQuestionNumber].questionText + "</h3>");
-			$("#result-msg").append("<h4>Correct answer: " + questionsArray[currentQuestionNumber].correctDetails + "</h4>");
-			$("#result-msg").append("<div class='result-slider'><h4>You answered: " + questionsArray[currentQuestionNumber].questionChoices[userSelectedChoiceArray[currentQuestionNumber]] + "</h4></div>");
+			$("#result-msg").append("<h4>Question " + (currentQuestionNumber + 1) + ": " + questionsArray[currentQuestionNumber].questionText + "</h4>");
+			$("#result-msg").append("<h5>Correct answer: " + questionsArray[currentQuestionNumber].correctDetails + "</h5>");
+			$("#result-msg").append("<div class='result-slider'><h5>You answered: " + questionsArray[currentQuestionNumber].questionChoices[userSelectedChoiceArray[currentQuestionNumber]] + "</h5></div>");
 		
 			console.log("user choice array: " + userSelectedChoiceArray);
 			console.log(currentQuestionNumber);

@@ -121,3 +121,10 @@ input[type="radio"] {
 	background-color: black;
 	color: white;
 }
+
+.result-box {
+	border: 2px solid black;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
