@@ -2,7 +2,6 @@ header {
 	text-align: center;
 	margin: 3em auto;
 	width: 50%;
-	/*border: 1px solid black;*/
 }
 
 .css-typing {
@@ -41,7 +40,6 @@ header {
 	display: none;
 	margin-top: 1em;
 	text-align: center;
-	/*border: 1px solid green;*/
 }
 
 .startButton {
@@ -63,20 +61,13 @@ header {
 }
 
 .main-quiz-holder {
-	/*border: 1px solid red;*/
 	margin-top: 3em;
 	display: none;
 	text-align: center;
 }
 
-#prompt {
-	/*border: 1px solid green;*/
-	/*font-family: "Share Tech Mono";*/
-}
-
 .questionNumberDisplay {
 	font-size: 1.5em;
-	/*font-family: "Share Tech Mono";*/
 }
 
 label {
@@ -89,7 +80,6 @@ input[type="radio"] {
 
 .choice-wrapper {
 	text-align: center;
-	/*border: 1px solid green;*/
 }
 
 .choice {
@@ -106,7 +96,6 @@ input[type="radio"] {
 }
 
 #result-msg {
-	/*border: 1px solid red;*/
 	margin-bottom: 1.5em;
 }
 
