@@ -4,7 +4,7 @@
 
 Do you have what it takes to be a spy? Find out with this Spy Quiz.
 
-<img src="images/screenshot.gif">
+<a href="https://dreamthink.github.io/spyquiz"><img src="images/screenshot.gif"></a>
 
 <h3>BUILT WITH:</h3>
 HTML, CSS, JavaScript, jQuery, jQuery UI
