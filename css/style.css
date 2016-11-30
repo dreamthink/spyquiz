@@ -101,6 +101,23 @@ input[type="radio"] {
 }
 
 .choice:hover {
-	border: 1px solid red;
+	background-color: black;
+	color: white;
 }
 
+#result-msg {
+	/*border: 1px solid red;*/
+	margin-bottom: 1.5em;
+}
+
+#againButton {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	margin-bottom: 1.5em;
+}
+
+#againButton:hover {
+	background-color: black;
+	color: white;
+}

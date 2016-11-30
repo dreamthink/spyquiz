@@ -66,6 +66,7 @@ $(document).ready(function() {
 			$(".spyimage").fadeIn(2000);
 			$(".btn-start").fadeIn(2000);
 		});
+	// start button initiates game
 	$(".startButton").click(function() {
 		$(".startButton").toggle("bounce", { times: 3}, "slow", function() {
 			$(".intro").hide();
@@ -78,15 +79,20 @@ $(document).ready(function() {
 	$(".questionAndAnswerContainer").on("click", ".option", function() {
 			var answer = $("input[class='option']:checked").val();
 			userSelectedChoiceArray.push(answer);
+			
 			var correctAnswer = questionsArray[currentQuestionNumber].correctAnswer;
 		
 			if (answer == correctAnswer) {
 				correctTotal++;
-				// console.log(correctTotal);
-				}
+			}
 
-			$("#result-msg").append("<h3>Q: " + questionsArray[currentQuestionNumber].questionText + "</h3>");
-			$("#result-msg").append("<h4>A: " + questionsArray[currentQuestionNumber].correctDetails + "</h4>");
+			// build result slider
+			$("#result-msg").append("<h3>Question " + (currentQuestionNumber + 1) + ": " + questionsArray[currentQuestionNumber].questionText + "</h3>");
+			$("#result-msg").append("<h4>Correct answer: " + questionsArray[currentQuestionNumber].correctDetails + "</h4>");
+			$("#result-msg").append("<div class='result-slider'><h4>You answered: " + questionsArray[currentQuestionNumber].questionChoices[userSelectedChoiceArray[currentQuestionNumber]] + "</h4></div>");
+		
+			console.log("user choice array: " + userSelectedChoiceArray);
+			console.log(currentQuestionNumber);
 
 			if (currentQuestionNumber + 1 == totalNumberOfQuestions) {
 				$("#result").text(correctTotal + "/" + totalNumberOfQuestions);
@@ -107,6 +113,7 @@ $(document).ready(function() {
 
 				$(".questionAndAnswerContainer").hide();
 				$(".results").show();
+				console.log("correct Total is: " + correctTotal);
 			} else {
 				currentQuestionNumber++;
 				questionDisplay();
@@ -119,13 +126,12 @@ $(document).ready(function() {
 		currentQuestionNumber = 0;
 		correctTotal = 0;
 		$(".result-detail-msg").empty();
+		userSelectedChoiceArray = [];
 		$("#result-msg").empty();
 		$(".results").hide();
 		$(".questionAndAnswerContainer").show();
 		questionDisplay();
 	});
-
-// console.log(userSelectedChoiceArray);
 
 });
 
